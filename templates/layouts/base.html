@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | {% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <h1>{% block judul_berita %}{% endblock judul_berita %}</h1>
+    <p>{% block content_berita %}{% endblock content_berita %}</p>
+    <p>author: {% block author_berita %}{% endblock author_berita %}</audio></p>
+
+    <hr>
+
+    {% include "includes/list-berita.html" %}
+</body>
+</html>
